@@ -1,0 +1,14 @@
+global:
+  services:
+    aws:
+      region: eu-central-1
+      efs:
+        id: # Replace with correct ID #
+
+storage:
+  name: tensorflow-fs
+  accessMode: ReadWriteMany
+  pv:
+    capacity: "900Gi"
+  pvc:
+    request: "750Gi"
